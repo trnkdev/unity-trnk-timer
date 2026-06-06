@@ -1,7 +1,6 @@
 # TRnK Timer
 
 PlayerLoop-driven countdown and stopwatch timers for Unity. No coroutines, no MonoBehaviour Update — timers are managed in a flat ECS-style slot array ticked directly from Unity's PlayerLoop.
----
 
 ## Installation
 
