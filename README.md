@@ -1,11 +1,6 @@
 # TRnK Timer
 
 PlayerLoop-driven countdown and stopwatch timers for Unity. No coroutines, no MonoBehaviour Update — timers are managed in a flat ECS-style slot array ticked directly from Unity's PlayerLoop.
-
-```csharp
-using TRnK.Timer;
-```
-
 ---
 
 ## Installation
@@ -24,6 +19,10 @@ https://github.com/trnkdev/unity-trnk-timer.git
 ---
 
 ## Timers
+
+```csharp
+using TRnK.Timer;
+```
 
 Two timer types, both lightweight `readonly struct` handles:
 
