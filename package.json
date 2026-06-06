@@ -1,0 +1,20 @@
+{
+  "name": "com.trnkdev.unitytimer",
+  "version": "1.0.0",
+  "displayName": "TRnK Timer",
+  "description": "PlayerLoop-driven countdown and stopwatch timers for Unity. Zero coroutines, ECS-style slot array, non-capturing callbacks.",
+  "unity": "6.0",
+  "dependencies": {
+    "com.trnkdev.unitytoolkit": "2.5.4"
+  },
+  "author": {
+    "name": "Nguyen Thanh Trung",
+    "url": "https://github.com/trnkdev"
+  },
+  "keywords": [
+    "unity",
+    "timer",
+    "countdown",
+    "stopwatch"
+  ]
+}
