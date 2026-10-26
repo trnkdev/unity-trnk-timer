@@ -1,6 +1,6 @@
 #if UNITY_EDITOR
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 namespace TRnK.Timer
@@ -27,7 +27,7 @@ namespace TRnK.Timer
         internal static int EditorCapacity => _hotSlots?.Length ?? 0;
         internal static int EditorFreeCount => _freeCount;
         internal static int EditorSlotMemoryBytes =>
-            (_hotSlots?.Length ?? 0) * (Unsafe.SizeOf<TimerSlotHot>() + Unsafe.SizeOf<TimerSlotCold>());
+            (_hotSlots?.Length ?? 0) * (UnsafeUtility.SizeOf<TimerSlotHot>() + UnsafeUtility.SizeOf<TimerSlotCold>());
 
         /// <summary>Fired on the main thread whenever the slot arrays are reallocated (Grow or SetCapacity).</summary>
         internal static event System.Action EditorOnCapacityChanged;

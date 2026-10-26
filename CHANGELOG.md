@@ -1,3 +1,10 @@
+## [1.0.1] - 2026-10-26
+
+### Bug Fixes
+
+- Fixed `CS0103: The name 'Unsafe' does not exist in the current context` after switching the build target to iOS. The Timer Tracker's slot memory stat now uses Unity's built-in `UnsafeUtility.SizeOf<T>()` instead of `Unsafe.SizeOf<T>()`, which relied on an unrelated plugin DLL being present for the active platform.
+
+
 ## [1.0.0] - 2026-06-05
 
 ### Initial Release — Migrated from TRnK Toolkit

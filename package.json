@@ -1,6 +1,6 @@
 {
   "name": "com.trnkdev.unitytimer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "TRnK Timer",
   "description": "PlayerLoop-driven countdown and stopwatch timers for Unity. Zero coroutines, ECS-style slot array, non-capturing callbacks.",
   "unity": "6.0",
